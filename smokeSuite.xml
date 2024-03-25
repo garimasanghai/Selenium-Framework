@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+<run>
+<include name="SmokeSuite"></include>
+</run>
+</groups>
+  <test thread-count="5" name="Test" >
+  
+    <classes>
+      <class name="orgTestCases.CreateOrgTest"/>
+      <class name="orgTestCases.CreateOrganisationWithIndustry"/>
+      <class name="contactTestCase.CreateContactWithOrganisationTest"/>
+      <class name="vendorTestCase.CreateVendorTest"/>
+      <class name="productTestCase.CreateProductWithVendorAndScroll"/>
+      <class name="productTestCase.CreateProductTest"/>
+      <class name="opportunitiesTestCase.CreateOpportunitiesWithAllMandatorydata"/>
+      <class name="contactTestCase.CreateContactTest"/>
+      <class name="opportunitiesTestCase.CreateOpportunitiesWithContactTest"/>
+      <class name="opportunitiesTestCase.CreateOpportunitiesWithOrgTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
